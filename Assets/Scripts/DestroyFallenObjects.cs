@@ -4,25 +4,25 @@ using UnityEngine;
 
 public class DestroyFallenObjects : MonoBehaviour
 {
-    [SerializeField] string poolName; // Name for the pool of the define object
-    private GameObject pool;
-    private ObjectPooling objectPooling;
+    [SerializeField] string _poolName; // Name for the pool of the define object
+    private GameObject _pool;
+    private ObjectPooling _objectPooling;
 
-    private float YBound = -40;
+    private float _YBound = -40;
 
     // Start is called before the first frame update
     void Start()
     {
-        pool = GameObject.Find(poolName);
-        objectPooling = pool.GetComponent<ObjectPooling>();
+        _pool = GameObject.Find(_poolName);
+        _objectPooling = _pool.GetComponent<ObjectPooling>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (transform.position.y < YBound)
+        if (transform.position.y < _YBound)
         {
-            objectPooling.PutAwayObject(gameObject);
+            _objectPooling.PutAwayObject(gameObject);
         }
     }
 }

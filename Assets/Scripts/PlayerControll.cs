@@ -20,9 +20,10 @@ public class PlayerControll : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        controllPlayerMovement();
+        ControllPlayerMovement();
     }
-    private void controllPlayerMovement()
+
+    void ControllPlayerMovement()
     {
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");

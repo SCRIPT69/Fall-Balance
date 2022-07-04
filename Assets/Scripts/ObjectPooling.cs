@@ -11,16 +11,16 @@ Use PutAwayObject() to deactivate object
 */
 public class ObjectPooling : MonoBehaviour
 {
-    [SerializeField] int objectsAmount;
-    [SerializeField] GameObject objectToPool;
+    [SerializeField] int _objectsAmount;
+    [SerializeField] GameObject _objectToPool;
     private List<GameObject> _pooledObjects;
 
     void Start()
     {
         _pooledObjects = new List<GameObject>();
-        for (int i = 0; i < objectsAmount; i++)
+        for (int i = 0; i < _objectsAmount; i++)
         {
-            GameObject obj = (GameObject)Instantiate(objectToPool);
+            GameObject obj = (GameObject)Instantiate(_objectToPool);
             obj.SetActive(false);
             _pooledObjects.Add(obj);
             obj.transform.SetParent(this.transform);

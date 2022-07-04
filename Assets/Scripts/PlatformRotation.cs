@@ -7,23 +7,22 @@ public class PlatformRotation : MonoBehaviour
 {
     private class RotationAxis
     {
-        public bool IsAtStartPosition = true;
-        public float Direction = 3;
+        public bool IsAtStartPosition { get; set; } = true;
+        public float Direction { get; set; } = 3;
 
-        public float RotationTime;
+        public float RotationTime { get; set; }
     }
 
-    private RotationAxis XRotation = new RotationAxis();
-    private RotationAxis ZRotation = new RotationAxis();
+    private RotationAxis _XRotation = new RotationAxis();
+    private RotationAxis _ZRotation = new RotationAxis();
 
 
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(StartRotation(XRotation));
-        StartCoroutine(StartRotation(ZRotation));
+        StartCoroutine(StartRotation(_XRotation));
+        StartCoroutine(StartRotation(_ZRotation));
     }
-
 
     IEnumerator StartRotation(RotationAxis axis)
     {
@@ -31,7 +30,7 @@ public class PlatformRotation : MonoBehaviour
         {
             if (axis.IsAtStartPosition)
             {
-                axis.Direction = GenerateRandomDirection(axis.Direction);
+                axis.Direction = generateRandomDirection(axis.Direction);
                 axis.RotationTime = Random.Range(3, 10);
             }
             else
@@ -43,8 +42,7 @@ public class PlatformRotation : MonoBehaviour
             yield return new WaitForSeconds(axis.RotationTime);
         }
     }
-
-    float GenerateRandomDirection(float distance)
+    private float generateRandomDirection(float distance)
     {
         float direction = distance;
         if ( Random.Range(0, 2) == 0) // Random number: 0 or 1, if 0, then direction will be changed
@@ -57,7 +55,7 @@ public class PlatformRotation : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Rotate(Vector3.forward, XRotation.Direction * Time.deltaTime);
-        transform.Rotate(Vector3.right, ZRotation.Direction * Time.deltaTime);
+        transform.Rotate(Vector3.forward, _XRotation.Direction * Time.deltaTime);
+        transform.Rotate(Vector3.right, _ZRotation.Direction * Time.deltaTime);
     }
 }

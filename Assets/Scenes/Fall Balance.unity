@@ -167,8 +167,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 211202ef5a6a92f40aa7fb3060c5d9ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectsAmount: 15
-  objectToPool: {fileID: 6183212191280939819, guid: a221a94625160c14f8d2716c5078ee42, type: 3}
+  _objectsAmount: 15
+  _objectToPool: {fileID: 6183212191280939819, guid: a221a94625160c14f8d2716c5078ee42, type: 3}
 --- !u!1 &103140484
 GameObject:
   m_ObjectHideFlags: 0
@@ -280,13 +280,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72454d4eee206e64da2af3b5e8470277, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pool: {fileID: 921767638}
-  minSpeed: 700
-  maxSpeed: 3000
-  obstaclePrefab: {fileID: 4909280360659754461, guid: 982eb19de47bb844aa2e4efe9ea193d2, type: 3}
-  direction: {x: 0, y: 0, z: 1}
-  minTime: 1
-  maxTime: 3
+  _pool: {fileID: 921767638}
+  _minSpeed: 700
+  _maxSpeed: 3000
+  _obstaclePrefab: {fileID: 4909280360659754461, guid: 982eb19de47bb844aa2e4efe9ea193d2, type: 3}
+  _direction: {x: 0, y: 0, z: 1}
+  _minTime: 1
+  _maxTime: 3
 --- !u!1 &219336597
 GameObject:
   m_ObjectHideFlags: 0
@@ -398,13 +398,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72454d4eee206e64da2af3b5e8470277, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pool: {fileID: 67658987}
-  minSpeed: 800
-  maxSpeed: 2000
-  obstaclePrefab: {fileID: 6183212191280939819, guid: a221a94625160c14f8d2716c5078ee42, type: 3}
-  direction: {x: 1, y: 0, z: 0}
-  minTime: 1
-  maxTime: 6
+  _pool: {fileID: 67658987}
+  _minSpeed: 800
+  _maxSpeed: 2000
+  _obstaclePrefab: {fileID: 6183212191280939819, guid: a221a94625160c14f8d2716c5078ee42, type: 3}
+  _direction: {x: 1, y: 0, z: 0}
+  _minTime: 1
+  _maxTime: 6
 --- !u!1 &481297828
 GameObject:
   m_ObjectHideFlags: 3
@@ -474,7 +474,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 481297828}
-  m_LocalRotation: {x: 0.27357662, y: 0.00000001654996, z: -0.000000004707263, w: 0.9618502}
+  m_LocalRotation: {x: 0.27357662, y: -0.000000016549961, z: 0.0000000047072635, w: 0.9618502}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -887,8 +887,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 211202ef5a6a92f40aa7fb3060c5d9ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectsAmount: 20
-  objectToPool: {fileID: 4909280360659754461, guid: 982eb19de47bb844aa2e4efe9ea193d2, type: 3}
+  _objectsAmount: 20
+  _objectToPool: {fileID: 4909280360659754461, guid: 982eb19de47bb844aa2e4efe9ea193d2, type: 3}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -966,7 +966,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.290981, y: -0.000000017123547, z: 0.000000004805262, w: 0.9567288}
+  m_LocalRotation: {x: 0.290981, y: 0.000000017123547, z: -0.000000004805262, w: 0.9567288}
   m_LocalPosition: {x: 0, y: 11.42, z: -14.33}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1614,7 +1614,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1497125898}
-  m_LocalRotation: {x: 0.30833524, y: -0.000000028350287, z: 0.000000009189106, w: 0.9512778}
+  m_LocalRotation: {x: 0.3083352, y: 3.2065216e-15, z: -1.3026753e-15, w: 0.9512778}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1692,7 +1692,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1518365261}
-  m_LocalRotation: {x: 0.290981, y: -0.000000016461842, z: 0.0000000050067293, w: 0.9567289}
+  m_LocalRotation: {x: 0.290981, y: 0.000000016461842, z: -0.0000000050067293, w: 0.9567289}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0

@@ -4,24 +4,23 @@ using UnityEngine;
 
 public class ObstacleThrowing : MonoBehaviour
 {
-    [SerializeField] GameObject pool;
-    private ObjectPooling objectPooling;
+    [SerializeField] GameObject _pool;
+    private ObjectPooling _objectPooling;
 
-    [SerializeField] float minSpeed;
-    [SerializeField] float maxSpeed;
-    [SerializeField] GameObject obstaclePrefab;
-    [SerializeField] Vector3 direction;
+    [SerializeField] float _minSpeed;
+    [SerializeField] float _maxSpeed;
+    [SerializeField] GameObject _obstaclePrefab;
+    [SerializeField] Vector3 _direction;
 
-    [SerializeField] float minTime;
-    [SerializeField] float maxTime;
+    [SerializeField] float _minTime;
+    [SerializeField] float _maxTime;
 
-    private float maxTorque = 10000;
+    private float _maxTorque = 10000;
 
     // Start is called before the first frame update
     void Start()
     {
-        objectPooling = pool.GetComponent<ObjectPooling>();
-        //Invoke("ThrowObstacle", Random.Range(minTime, maxTime));
+        _objectPooling = _pool.GetComponent<ObjectPooling>();
         StartCoroutine(StartThrowingObstaclesCycle());
     }
 
@@ -30,25 +29,17 @@ public class ObstacleThrowing : MonoBehaviour
         // Cycle to spawn flying from the tube obstacles
         while (true)
         {
-            yield return new WaitForSeconds(Random.Range(minTime, maxTime));
+            yield return new WaitForSeconds(Random.Range(_minTime, _maxTime));
 
-            GameObject obstacle = objectPooling.SpawnObject(obstaclePrefab.transform.position, obstaclePrefab.transform.rotation);
+            GameObject obstacle = _objectPooling.SpawnObject(_obstaclePrefab.transform.position, _obstaclePrefab.transform.rotation);
             Rigidbody obstacleRigidbody = obstacle.GetComponent<Rigidbody>();
-            float randomSpeed = Random.Range(minSpeed, maxSpeed);
-            obstacleRigidbody.AddForce(direction * randomSpeed, ForceMode.Impulse);
-            obstacleRigidbody.AddTorque(GetRandomTorque(), GetRandomTorque(), GetRandomTorque());
+            float randomSpeed = Random.Range(_minSpeed, _maxSpeed);
+            obstacleRigidbody.AddForce(_direction * randomSpeed, ForceMode.Impulse);
+            obstacleRigidbody.AddTorque(getRandomTorque(), getRandomTorque(), getRandomTorque());
         }
-        //Invoke("ThrowObstacle", Random.Range(minTime, maxTime));
     }
-
-    float GetRandomTorque()
+    private float getRandomTorque()
     {
-        return Random.Range(-maxTorque, maxTorque);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        return Random.Range(-_maxTorque, _maxTorque);
     }
 }
