@@ -6,7 +6,7 @@ public class EnemyLogic : MonoBehaviour
 {
     private Movement _movement;
 
-    private float _speed = 4;
+    private float _speed = 5;
     private GameObject _player;
     private Rigidbody _enemyRigidbody;
 
