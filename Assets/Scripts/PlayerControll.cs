@@ -7,7 +7,7 @@ public class PlayerControll : MonoBehaviour
     private GameObject _camera;
     private Rigidbody _playerRigidbody;
     private Movement _movement;
-    private float _speed = 7;
+    private float _speed = 9.5f;
     [SerializeField] Joystick _joystick;
 
     // Start is called before the first frame update
