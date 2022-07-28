@@ -9,12 +9,14 @@ public class CameraControllingPanel : MonoBehaviour, IPointerDownHandler, IPoint
     [SerializeField] CinemachineFreeLook _camera;
     private int _fingerID;
     private bool _isTouched = false;
+    private float _cameraXRotationSpeed = 120;
+    private float _cameraYRotationSpeed = 1;
 
     // Start is called before the first frame update
     void Start()
     {
-        _camera.m_XAxis.m_MaxSpeed = 100;
-        _camera.m_YAxis.m_MaxSpeed = 1;
+        _camera.m_XAxis.m_MaxSpeed = _cameraXRotationSpeed;
+        _camera.m_YAxis.m_MaxSpeed = _cameraYRotationSpeed;
 
         _camera.m_YAxis.m_InputAxisName = "";
         _camera.m_XAxis.m_InputAxisName = "";
