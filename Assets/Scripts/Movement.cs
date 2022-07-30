@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Movement : MonoBehaviour
@@ -7,7 +5,6 @@ public class Movement : MonoBehaviour
     private bool _isOnPlatform = false;
     private Rigidbody _targetRigidbody;
 
-    // Start is called before the first frame update
     void Start()
     {
         _targetRigidbody = GetComponent<Rigidbody>();

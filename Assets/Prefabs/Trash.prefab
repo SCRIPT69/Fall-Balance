@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6183212191280939817}
   - component: {fileID: 6183212191280939816}
   - component: {fileID: 6183212191280939828}
-  - component: {fileID: 2901542625810939158}
+  - component: {fileID: 5209095948251151436}
   m_Layer: 0
   m_Name: Trash
   m_TagString: Untagged
@@ -115,7 +115,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &2901542625810939158
+--- !u!114 &5209095948251151436
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -124,7 +124,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6183212191280939819}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 177fe0a44a4dc9947a4d28f90812a40e, type: 3}
+  m_Script: {fileID: 11500000, guid: 2f9cd60b4a23599489f4ab0adc282809, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _poolName: TrashPooling

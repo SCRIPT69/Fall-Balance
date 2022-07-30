@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using Cinemachine;
@@ -12,7 +10,6 @@ public class CameraControllingPanel : MonoBehaviour, IPointerDownHandler, IPoint
     private float _cameraXRotationSpeed = 120;
     private float _cameraYRotationSpeed = 1;
 
-    // Start is called before the first frame update
     void Start()
     {
         _camera.m_XAxis.m_MaxSpeed = _cameraXRotationSpeed;

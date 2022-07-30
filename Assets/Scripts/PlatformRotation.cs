@@ -17,7 +17,6 @@ public class PlatformRotation : MonoBehaviour
     private RotationAxis _ZRotation = new RotationAxis();
 
 
-    // Start is called before the first frame update
     void Start()
     {
         StartCoroutine(StartRotation(_XRotation));
@@ -52,7 +51,6 @@ public class PlatformRotation : MonoBehaviour
         return direction;
     }
 
-    // Update is called once per frame
     void Update()
     {
         transform.Rotate(Vector3.forward, _XRotation.Direction * Time.deltaTime);
