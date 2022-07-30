@@ -17,7 +17,6 @@ public class ObstacleThrowing : MonoBehaviour
 
     private float _maxTorque = 10000;
 
-    // Start is called before the first frame update
     void Start()
     {
         _objectPooling = _pool.GetComponent<ObjectPooling>();
