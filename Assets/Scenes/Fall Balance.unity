@@ -490,7 +490,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 481297828}
-  m_LocalRotation: {x: 0.20574248, y: 0.008539866, z: -0.0017954957, w: 0.9785673}
+  m_LocalRotation: {x: 0.20574248, y: 0.008539828, z: -0.0017954877, w: 0.9785673}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1003,7 +1003,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.22346127, y: 0.008505878, z: -0.0019501239, w: 0.97467375}
+  m_LocalRotation: {x: 0.22346127, y: 0.008505878, z: -0.0019501235, w: 0.97467375}
   m_LocalPosition: {x: -0.35253948, y: 11.74, z: -20.196924}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1242,7 +1242,7 @@ GameObject:
   - component: {fileID: 1121855202}
   - component: {fileID: 1121855204}
   - component: {fileID: 1121855205}
-  m_Layer: 7
+  m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2037,7 +2037,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1497125898}
-  m_LocalRotation: {x: 0.24115312, y: 0.008469021, z: -0.0021045238, w: 0.97044784}
+  m_LocalRotation: {x: 0.24115312, y: 0.00846896, z: -0.002104509, w: 0.97044784}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
