@@ -7,7 +7,7 @@ public class CameraControllingPanel : MonoBehaviour, IPointerDownHandler, IPoint
     [SerializeField] CinemachineFreeLook _camera;
     private int _fingerID;
     private bool _isTouched = false;
-    private float _cameraXRotationSpeed = 120;
+    private float _cameraXRotationSpeed = 70;
     private float _cameraYRotationSpeed = 1;
 
     void Start()
