@@ -22,10 +22,9 @@ public class PlayerControll : MonoBehaviour
         ControllPlayerMovement();
     }
 
+
     void ControllPlayerMovement()
     {
-        //float horizontalInput = Input.GetAxis("Horizontal");
-        //float verticalInput = Input.GetAxis("Vertical");
         float horizontalInput = _joystick.Horizontal;
         float verticalInput = _joystick.Vertical;
         _movement.AddForce(_camera.transform.forward * verticalInput * _speed);
