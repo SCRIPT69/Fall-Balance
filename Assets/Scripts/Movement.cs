@@ -10,22 +10,19 @@ public class Movement : MonoBehaviour
         _targetRigidbody = GetComponent<Rigidbody>();
     }
 
-    private void OnCollisionEnter(Collision collision)
+
+    private void OnCollisionStay(Collision collision)
     {
         if (collision.gameObject.CompareTag("Platform"))
         {
             _isOnPlatform = true;
         }
-    }
-
-    private void OnCollisionExit(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("Platform"))
+        else
         {
             _isOnPlatform = false;
         }
     }
-    
+
     // The method for encapsulation of movement logic and conditions
     public void AddForce(Vector3 movementDirection)
     {

@@ -9,7 +9,7 @@ public class Bounciness : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.GetComponent<Rigidbody>() is not null)
+        if (other.gameObject.CompareTag("Player"))
         {
             Repel(other.gameObject);
         }
