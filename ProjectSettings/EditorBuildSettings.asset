@@ -9,9 +9,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Main Menu.unity
     guid: 2509215eb18d4c8438a43e8630f70506
   - enabled: 1
-    path: Assets/Scenes/First Level.unity
+    path: Assets/Scenes/Second Level.unity
     guid: 9ac7b0c7314f0bd4e81e2844538b3f98
   - enabled: 1
-    path: Assets/Scenes/Fall Balance.unity
+    path: Assets/Scenes/First Level.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   m_configObjects: {}
